@@ -1,9 +1,13 @@
-1 motif
-2 motif
-vkjfdkf
-3 motif
-fkhifuh
-vfkviuhf
-vifhvoiuf
-vfojvf
-vfjv vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv 4 motif
+On cherche un MOTIF
+ou est il ?
+Il n'est pas dans cette ligne.
+peu etre ici ?
+non il est la -> motif
+motif en debut de ligne
+en fin de ligne -> motif
+lemotif est dans la ligne
+maitenant il est seul dans une ligne
+motif
+MOTIF
+Maintenant on cherche lina dans un autre fichier.
+

@@ -1,0 +1,1 @@
+La compilation de ce projet ce fait grace à un make. Pour lancer le programme : ./mygrep <option> <motif> <fichier>

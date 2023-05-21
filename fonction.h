@@ -1,41 +1,26 @@
+/**
+ * @file fonction.h
+ * @brief Definition des fonctions utilitaires pour la traitement des ligne d'un fichier.
+ *
+ * Ce fichier contient les fonctions utilitaires pour effectuer la recherche de motifs dans une ligne de texte et dans un fichier, en utilisant différentes options de recherche.
+ */
 #include <stdbool.h>
-#include"liste.h"
-#define MAX 20
+#include"option.h"
 
 
-typedef struct option_g{
-    bool c_flag;
-    bool l_flag;
-    bool i_flag;
-    bool A_flag;
-    int arg_A;
-    bool B_flag;
-    int arg_B;
-    bool v_flag;
-    bool n_flag;
-    bool h_flag;
-    bool H_flag;
-    bool L_flag;
-    bool affiche_ligne;
-    StringList motifs;
-    StringList fichiers;
-}option_g;
-
-
-int usage(char *s);
-void err(char *message);
-void recherche_fichier(StringList *motifs,FILE *fichier,option_g option);
-int recherche_motif(StringList *motifs,FILE *fichier,option_g option);
-
-
-
-
-int usage(char *s);
-void err(char *message);
+/**
+ * @brief Convertit une chaîne de caractères en minuscules.
+ * @param[in] str La chaîne de caractères à convertir en minuscules.
+ */
 void str_to_lower(char *str);
-bool recherche_dans_ligne(char *ligne, StringList *motifs, bool ignore_case);
-void recherche_fichier(StringList *motifs,FILE *fichier,option_g option);
-int recherche_motif(StringList *motifs, FILE *fichier, option_g option);
-bool recherche_dans_ligne(char *ligne, StringList *motifs, bool ignore_case);
-int verif_option(char **argv,int argc,option_g *option);
+
+/**
+ * @brief Affiche une ligne de texte avec un préfixe, le numéro de ligne et selon les options spécifiées.
+ * @param[in] ligne  La ligne de texte à afficher.
+ * @param[in] prefixe  Le préfixe à afficher avant la ligne.
+ * @param[in] option   Les options spécifiées.
+ * @param[in] ligne_num  Le numéro de ligne.
+ */
+void affiche_ligne(char *ligne, char *prefixe,option_g option, int ligne_num);
+
 
